@@ -1,0 +1,148 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumys Tap — Қазақстандағы бос жұмыс орындары</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jumys Tap</h1>
+        <p>Болашағыңды бүгін тап!</p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Қазақстандағы өзекті жұмыс орындары</h2>
+            <p>Жұмыссыздықпен бірге күресейік. Өзіңе лайықты вакансияны таңда.</p>
+        </section>
+
+        <main class="job-grid">
+            <div class="job-card">
+                <h3>IT Маман (Junior)</h3>
+                <p class="city">📍 Астана</p>
+                <p class="description">Веб-сайттарды дамытуға көмектесетін маман керек. HTML/CSS білуі тиіс.</p>
+                <button class="apply-btn">Толығырақ</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Графикалық дизайнер</h3>
+                <p class="city">📍 Алматы</p>
+                <p class="description">Әлеуметтік желілерге креативті дизайндар жасайтын шебер қажет.</p>
+                <button class="apply-btn">Толығырақ</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Ағылшын тілі мұғалімі</h3>
+                <p class="city">📍 Шымкент</p>
+                <p class="description">Оқу орталығына тәжірибелі немесе жас мамандарды шақырамыз.</p>
+                <button class="apply-btn">Толығырақ</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Маркетолог</h3>
+                <p class="city">📍 Қарағанды</p>
+                <p class="description">Бизнесті алға жылжыту және жарнамамен айналысатын маман.</p>
+                <button class="apply-btn">Толығырақ</button>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 "Jumys Tap" жобасы. Барлық құқықтар қорғалған.</p>
+    </footer>
+
+</body>
+</html>
+<style>/* Жалпы стильдер */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Тор (Grid) жүйесі — Төртбұрыштар осы жерде жасалады */
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Карточка стилі */
+.job-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    border-color: #3498db;
+}
+
+.job-card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.city {
+    font-weight: bold;
+    color: #3498db;
+    font-size: 0.9em;
+}
+
+.description {
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+/* Батырма стилі */
+.apply-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.apply-btn:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8em;
+    color: #777;
+}
+
+</style>
